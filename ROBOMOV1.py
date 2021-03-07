@@ -4,14 +4,14 @@ for i in range(T):
     m = xe - x
     n = ye - y
     ar=[]
-    while x is not xe :
+    while x != xe :
         if m >= 0 :
             x=x+1
             ar.append("E")
         else:
             x=x-1
             ar.append("W")
-    while y is not ye:
+    while y != ye:
 
         if n >= 0 :
             y = y+1
@@ -22,5 +22,3 @@ for i in range(T):
     print(len(ar))
     ar = ''.join(map(str, ar))
     print(ar)
-
-
